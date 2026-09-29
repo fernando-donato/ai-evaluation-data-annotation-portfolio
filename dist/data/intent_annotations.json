@@ -1,0 +1,386 @@
+[
+  {
+    "item_id": "AN-001",
+    "language": "pt-BR",
+    "text": "Meu pedido não chegou e o rastreio parou há uma semana.",
+    "primary_intent": "DELIVERY_ISSUE",
+    "urgency": "Medium",
+    "provenance": "synthetic"
+  },
+  {
+    "item_id": "AN-002",
+    "language": "pt-BR",
+    "text": "Recebi aviso de entrega, mas não há pacote na portaria.",
+    "primary_intent": "DELIVERY_ISSUE",
+    "urgency": "Medium",
+    "provenance": "synthetic"
+  },
+  {
+    "item_id": "AN-003",
+    "language": "pt-BR",
+    "text": "A encomenda veio com dois dias de atraso.",
+    "primary_intent": "DELIVERY_ISSUE",
+    "urgency": "Low",
+    "provenance": "synthetic"
+  },
+  {
+    "item_id": "AN-004",
+    "language": "pt-BR",
+    "text": "Podem confirmar onde está minha entrega?",
+    "primary_intent": "DELIVERY_ISSUE",
+    "urgency": "Low",
+    "provenance": "synthetic"
+  },
+  {
+    "item_id": "AN-005",
+    "language": "pt-BR",
+    "text": "O endereço da entrega está errado e o pacote sai hoje.",
+    "primary_intent": "DELIVERY_ISSUE",
+    "urgency": "High",
+    "provenance": "synthetic"
+  },
+  {
+    "item_id": "AN-006",
+    "language": "pt-BR",
+    "text": "O pacote foi devolvido ao remetente sem tentativa de entrega.",
+    "primary_intent": "DELIVERY_ISSUE",
+    "urgency": "Medium",
+    "provenance": "synthetic"
+  },
+  {
+    "item_id": "AN-007",
+    "language": "pt-BR",
+    "text": "Fui cobrado duas vezes pelo mesmo pedido.",
+    "primary_intent": "BILLING_ISSUE",
+    "urgency": "Medium",
+    "provenance": "synthetic"
+  },
+  {
+    "item_id": "AN-008",
+    "language": "pt-BR",
+    "text": "Meu cartão foi recusado, mas o banco aprovou a compra.",
+    "primary_intent": "BILLING_ISSUE",
+    "urgency": "Medium",
+    "provenance": "synthetic"
+  },
+  {
+    "item_id": "AN-009",
+    "language": "pt-BR",
+    "text": "Quero entender uma taxa extra na fatura.",
+    "primary_intent": "BILLING_ISSUE",
+    "urgency": "Low",
+    "provenance": "synthetic"
+  },
+  {
+    "item_id": "AN-010",
+    "language": "pt-BR",
+    "text": "Minha assinatura cancelada apareceu na fatura deste mês.",
+    "primary_intent": "BILLING_ISSUE",
+    "urgency": "Medium",
+    "provenance": "synthetic"
+  },
+  {
+    "item_id": "AN-011",
+    "language": "pt-BR",
+    "text": "O boleto vence hoje e não consigo gerar a segunda via.",
+    "primary_intent": "BILLING_ISSUE",
+    "urgency": "High",
+    "provenance": "synthetic"
+  },
+  {
+    "item_id": "AN-012",
+    "language": "pt-BR",
+    "text": "A cobrança está em uma moeda diferente da exibida no checkout.",
+    "primary_intent": "BILLING_ISSUE",
+    "urgency": "Medium",
+    "provenance": "synthetic"
+  },
+  {
+    "item_id": "AN-013",
+    "language": "pt-BR",
+    "text": "Quero meu dinheiro de volta pelo produto que devolvi.",
+    "primary_intent": "REFUND_REQUEST",
+    "urgency": "Medium",
+    "provenance": "synthetic"
+  },
+  {
+    "item_id": "AN-014",
+    "language": "pt-BR",
+    "text": "Por favor, estornem a cobrança duplicada no cartão.",
+    "primary_intent": "REFUND_REQUEST",
+    "urgency": "Medium",
+    "provenance": "synthetic"
+  },
+  {
+    "item_id": "AN-015",
+    "language": "pt-BR",
+    "text": "Solicito reembolso da assinatura renovada por engano.",
+    "primary_intent": "REFUND_REQUEST",
+    "urgency": "Medium",
+    "provenance": "synthetic"
+  },
+  {
+    "item_id": "AN-016",
+    "language": "pt-BR",
+    "text": "Paguei por um serviço que não funcionou; podem me devolver o valor?",
+    "primary_intent": "REFUND_REQUEST",
+    "urgency": "Medium",
+    "provenance": "synthetic"
+  },
+  {
+    "item_id": "AN-017",
+    "language": "pt-BR",
+    "text": "Preciso do estorno antes do fechamento da fatura amanhã.",
+    "primary_intent": "REFUND_REQUEST",
+    "urgency": "High",
+    "provenance": "synthetic"
+  },
+  {
+    "item_id": "AN-018",
+    "language": "pt-BR",
+    "text": "Gostaria de saber como pedir reembolso deste pedido.",
+    "primary_intent": "REFUND_REQUEST",
+    "urgency": "Low",
+    "provenance": "synthetic"
+  },
+  {
+    "item_id": "AN-019",
+    "language": "pt-BR",
+    "text": "Esqueci minha senha e não consigo acessar a conta.",
+    "primary_intent": "ACCOUNT_ACCESS",
+    "urgency": "Medium",
+    "provenance": "synthetic"
+  },
+  {
+    "item_id": "AN-020",
+    "language": "pt-BR",
+    "text": "O código de verificação não chega no meu e-mail.",
+    "primary_intent": "ACCOUNT_ACCESS",
+    "urgency": "Medium",
+    "provenance": "synthetic"
+  },
+  {
+    "item_id": "AN-021",
+    "language": "pt-BR",
+    "text": "Minha conta foi bloqueada após várias tentativas.",
+    "primary_intent": "ACCOUNT_ACCESS",
+    "urgency": "Medium",
+    "provenance": "synthetic"
+  },
+  {
+    "item_id": "AN-022",
+    "language": "pt-BR",
+    "text": "Não consigo entrar com meu novo número de telefone.",
+    "primary_intent": "ACCOUNT_ACCESS",
+    "urgency": "Medium",
+    "provenance": "synthetic"
+  },
+  {
+    "item_id": "AN-023",
+    "language": "pt-BR",
+    "text": "Aparece acesso negado quando tento fazer login.",
+    "primary_intent": "ACCOUNT_ACCESS",
+    "urgency": "Medium",
+    "provenance": "synthetic"
+  },
+  {
+    "item_id": "AN-024",
+    "language": "pt-BR",
+    "text": "Como ativo a autenticação de dois fatores?",
+    "primary_intent": "ACCOUNT_ACCESS",
+    "urgency": "Low",
+    "provenance": "synthetic"
+  },
+  {
+    "item_id": "AN-025",
+    "language": "pt-BR",
+    "text": "O aplicativo fecha quando tento abrir meus pedidos.",
+    "primary_intent": "TECHNICAL_SUPPORT",
+    "urgency": "Medium",
+    "provenance": "synthetic"
+  },
+  {
+    "item_id": "AN-026",
+    "language": "pt-BR",
+    "text": "O botão de finalizar compra não responde.",
+    "primary_intent": "TECHNICAL_SUPPORT",
+    "urgency": "Medium",
+    "provenance": "synthetic"
+  },
+  {
+    "item_id": "AN-027",
+    "language": "pt-BR",
+    "text": "A página mostra erro 500 ao enviar o formulário.",
+    "primary_intent": "TECHNICAL_SUPPORT",
+    "urgency": "Medium",
+    "provenance": "synthetic"
+  },
+  {
+    "item_id": "AN-028",
+    "language": "pt-BR",
+    "text": "O site fica em branco no navegador do celular.",
+    "primary_intent": "TECHNICAL_SUPPORT",
+    "urgency": "Medium",
+    "provenance": "synthetic"
+  },
+  {
+    "item_id": "AN-029",
+    "language": "pt-BR",
+    "text": "O arquivo de comprovante não abre depois do download.",
+    "primary_intent": "TECHNICAL_SUPPORT",
+    "urgency": "Low",
+    "provenance": "synthetic"
+  },
+  {
+    "item_id": "AN-030",
+    "language": "pt-BR",
+    "text": "Vocês vendem vale-presente para compras?",
+    "primary_intent": "OTHER",
+    "urgency": "Low",
+    "provenance": "synthetic"
+  },
+  {
+    "item_id": "AN-031",
+    "language": "en",
+    "text": "Do you ship to rural addresses?",
+    "primary_intent": "OTHER",
+    "urgency": "Low",
+    "provenance": "synthetic"
+  },
+  {
+    "item_id": "AN-032",
+    "language": "en",
+    "text": "I'd like to suggest a new color option for this product.",
+    "primary_intent": "OTHER",
+    "urgency": "Low",
+    "provenance": "synthetic"
+  },
+  {
+    "item_id": "AN-033",
+    "language": "en",
+    "text": "My order is stuck in transit and I need it for tomorrow's event.",
+    "primary_intent": "DELIVERY_ISSUE",
+    "urgency": "High",
+    "provenance": "synthetic"
+  },
+  {
+    "item_id": "AN-034",
+    "language": "en",
+    "text": "Tracking says delivered, but nothing was left at my door.",
+    "primary_intent": "DELIVERY_ISSUE",
+    "urgency": "Medium",
+    "provenance": "synthetic"
+  },
+  {
+    "item_id": "AN-035",
+    "language": "en",
+    "text": "Can I reroute a package that's already on the way?",
+    "primary_intent": "DELIVERY_ISSUE",
+    "urgency": "Medium",
+    "provenance": "synthetic"
+  },
+  {
+    "item_id": "AN-036",
+    "language": "en",
+    "text": "The courier went to the wrong apartment.",
+    "primary_intent": "DELIVERY_ISSUE",
+    "urgency": "Medium",
+    "provenance": "synthetic"
+  },
+  {
+    "item_id": "AN-037",
+    "language": "en",
+    "text": "There's a charge on my statement I don't recognize.",
+    "primary_intent": "BILLING_ISSUE",
+    "urgency": "Medium",
+    "provenance": "synthetic"
+  },
+  {
+    "item_id": "AN-038",
+    "language": "en",
+    "text": "My promo code wasn't reflected in the final charge.",
+    "primary_intent": "BILLING_ISSUE",
+    "urgency": "Medium",
+    "provenance": "synthetic"
+  },
+  {
+    "item_id": "AN-039",
+    "language": "en",
+    "text": "The payment failed but my balance was reduced.",
+    "primary_intent": "BILLING_ISSUE",
+    "urgency": "High",
+    "provenance": "synthetic"
+  },
+  {
+    "item_id": "AN-040",
+    "language": "en",
+    "text": "Please refund the amount charged after I canceled.",
+    "primary_intent": "REFUND_REQUEST",
+    "urgency": "Medium",
+    "provenance": "synthetic"
+  },
+  {
+    "item_id": "AN-041",
+    "language": "en",
+    "text": "Can you return the shipping fee to my card?",
+    "primary_intent": "REFUND_REQUEST",
+    "urgency": "Medium",
+    "provenance": "synthetic"
+  },
+  {
+    "item_id": "AN-042",
+    "language": "en",
+    "text": "The item arrived damaged; I'd like my money back.",
+    "primary_intent": "REFUND_REQUEST",
+    "urgency": "Medium",
+    "provenance": "synthetic"
+  },
+  {
+    "item_id": "AN-043",
+    "language": "en",
+    "text": "I no longer have access to the email tied to my account.",
+    "primary_intent": "ACCOUNT_ACCESS",
+    "urgency": "Medium",
+    "provenance": "synthetic"
+  },
+  {
+    "item_id": "AN-044",
+    "language": "en",
+    "text": "The reset link keeps saying it has expired.",
+    "primary_intent": "ACCOUNT_ACCESS",
+    "urgency": "Medium",
+    "provenance": "synthetic"
+  },
+  {
+    "item_id": "AN-045",
+    "language": "en",
+    "text": "Someone else seems to have signed into my account.",
+    "primary_intent": "ACCOUNT_ACCESS",
+    "urgency": "High",
+    "provenance": "synthetic"
+  },
+  {
+    "item_id": "AN-046",
+    "language": "en",
+    "text": "The app crashes every time I upload a photo.",
+    "primary_intent": "TECHNICAL_SUPPORT",
+    "urgency": "Medium",
+    "provenance": "synthetic"
+  },
+  {
+    "item_id": "AN-047",
+    "language": "en",
+    "text": "I get an error whenever I try to download my receipt.",
+    "primary_intent": "TECHNICAL_SUPPORT",
+    "urgency": "Low",
+    "provenance": "synthetic"
+  },
+  {
+    "item_id": "AN-048",
+    "language": "en",
+    "text": "Do you have a student discount?",
+    "primary_intent": "OTHER",
+    "urgency": "Low",
+    "provenance": "synthetic"
+  }
+]

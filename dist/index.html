@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b1830">
+  <meta name="description" content="Fernando Donato's AI Evaluation and Data Annotation portfolio: inspect source-traceable MT-Bench model comparisons, a bilingual intent dataset, rubrics, and per-item rationale.">
+  <title>Fernando Donato — AI Evaluation & Data Annotation</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="shell header-inner">
+      <a class="brand" href="#top" aria-label="Fernando Donato, home"><span class="brand-mark" aria-hidden="true">F<span>.</span></span><span>Fernando Donato</span></a>
+      <nav aria-label="Main navigation"><a href="#projects">Projects</a><a href="#approach">Approach</a><a href="#about">About</a></nav>
+      <a class="header-link" href="https://www.linkedin.com/in/fernando-donato-747980116/" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero shell" id="top" aria-labelledby="hero-title">
+      <div class="hero-main">
+        <p class="eyebrow"><span class="small-square" aria-hidden="true"></span> AI EVALUATION · DATA ANNOTATION · PT-BR / EN</p>
+        <h1 id="hero-title">Clear judgments. <em>Traceable labels.</em></h1>
+        <p class="hero-copy">Two sample projects in side-by-side evaluation of archived model outputs and multilingual text annotation. Inspect model identifiers, source records, rubric scores, intent labels, and the reasons behind each decision.</p>
+        <div class="hero-actions"><a class="button primary" href="#projects">Explore projects <span aria-hidden="true">↘</span></a><a class="button secondary" href="https://github.com/fernando-donato" target="_blank" rel="noopener noreferrer">GitHub profile <span aria-hidden="true">↗</span></a></div>
+      </div>
+      <aside class="hero-aside" aria-label="Portfolio snapshot">
+        <div class="aside-heading"><span>PORTFOLIO / 2026</span><span class="cross" aria-hidden="true">✳</span></div>
+        <div class="stat"><strong>8</strong><span>real-model response pairs<br>with source IDs and rationales</span></div>
+        <div class="stat"><strong>48</strong><span>synthetic messages<br>with reference labels</span></div>
+        <div class="aside-bottom"><span>02 PROJECTS</span><span>PT-BR + EN</span></div>
+      </aside>
+    </section>
+
+    <section class="notice shell" aria-label="Dataset disclosure"><span class="notice-icon" aria-hidden="true">i</span><p><strong>Transparent sample work.</strong> Project 01 re-evaluates archived 2023 outputs from Claude Instant v1 and PaLM 2 chat-bison-001; these models were not run anew. Project 02 uses synthetic messages. The analysis is an AI-assisted draft awaiting Fernando's personal review. <a href="data/project_notes.md">Read scope and limitations <span aria-hidden="true">↗</span></a></p></section>
+
+    <section class="section shell" id="projects" aria-labelledby="projects-title">
+      <div class="section-heading"><div><p class="eyebrow">01 / SELECTED WORK</p><h2 id="projects-title">Projects you can inspect</h2></div><p>Two small projects with source links, scoring notes, and labeling guidelines.</p></div>
+
+      <article class="project" id="response-evaluation">
+        <div class="project-index">PROJECT 01 <span aria-hidden="true">/</span> RESPONSE QUALITY</div>
+        <div class="project-body">
+          <div class="project-intro"><div><h3>Side-by-side evaluation of real model outputs</h3><p>Compare archived first-turn MT-Bench answers from <strong>claude-instant-v1</strong> and <strong>palm-2-chat-bison-001</strong> for the same prompt. Each record links to the original answer ID and documents correctness, instruction following, relevance, clarity, preference, and rationale. The displayed answer descriptions are paraphrases; open the source files to read the full outputs.</p></div><div class="project-metrics"><span><b>8</b> paired prompts</span><span><b>2</b> recorded model IDs</span><span><b>4</b> scoring dimensions</span></div></div>
+          <div class="case-explorer"><div class="explorer-top"><div><span class="mini-label">OPEN A DECISION</span><h4>Explore an evaluation</h4></div><label for="case-select">Case <select id="case-select" aria-label="Choose evaluation case"><option>Loading cases…</option></select></label></div><div id="case-view" aria-live="polite"><p>Loading case data…</p></div></div>
+          <div class="project-links"><a href="data/real_model_evaluations.csv" download>Download evaluations <span>CSV ↗</span></a><a href="data/evaluation_rubric.md">Read scoring rubric & sources <span>MD ↗</span></a><a href="data/project_notes.md">Method & limits <span>MD ↗</span></a></div>
+        </div>
+      </article>
+
+      <article class="project" id="intent-annotation">
+        <div class="project-index">PROJECT 02 <span aria-hidden="true">/</span> DATA ANNOTATION</div>
+        <div class="project-body">
+          <div class="project-intro"><div><h3>Multilingual text annotation & QA rules</h3><p>A compact dataset of fictional customer messages labeled for primary intent and urgency. The annotation guide defines six classes, precedence rules, and ambiguous cases, especially the boundary between billing issues and explicit refund requests.</p></div><div class="project-metrics"><span><b>48</b> messages</span><span><b>6</b> intent classes</span><span><b>2</b> languages</span></div></div>
+          <div class="annotation-panel" id="annotation-explorer"><div class="annotation-explorer-head"><div><span class="mini-label">FULL ANNOTATED SAMPLE</span><h4>48 labeled messages</h4><p>English is shown first. Switch languages or select all to browse the full set. Each item shows its intent and urgency.</p></div><output id="annotation-count" aria-live="polite">Loading 48 items…</output></div><p class="intent-totals-label">Intent totals across both languages</p><div id="intent-counts" class="intent-counts" aria-label="Items per intent class across both languages"></div><div class="annotation-filters"><label for="language-filter">Language<select id="language-filter"><option value="en" selected>English</option><option value="pt-BR">Brazilian Portuguese</option><option value="all">All languages</option></select></label><label for="intent-filter">Primary intent<select id="intent-filter"><option value="all">All six classes</option></select></label></div><div id="annotation-list" class="annotation-list" role="list"><p>Loading annotations…</p></div><p class="comparison-note">Boundary rule: a duplicate charge without a money-back request is <strong>BILLING_ISSUE</strong>; an explicit request to reverse it is <strong>REFUND_REQUEST</strong>. The complete rules are in the annotation guide.</p></div>
+          <div class="project-links"><a href="data/intent_annotations.csv" download>Download annotations <span>CSV ↗</span></a><a href="data/annotation_guidelines.md">Read annotation guide <span>MD ↗</span></a><a href="data/project_notes.md">Method & limits <span>MD ↗</span></a></div>
+        </div>
+      </article>
+    </section>
+
+    <section class="language-section shell" aria-labelledby="language-title"><div><p class="eyebrow">LANGUAGE COVERAGE</p><h2 id="language-title">Brazilian Portuguese and English, in one workflow.</h2><p>The interface and evaluation rationale are in English for international reviewers. The annotation dataset includes 30 Brazilian Portuguese and 18 English messages, with documented labeling rules.</p></div><div class="language-example"><span class="mini-label">PT-BR / INTENT BOUNDARY</span><blockquote lang="pt-BR">“Por favor, estornem a cobrança duplicada no cartão.”</blockquote><p>This is labeled <strong>REFUND_REQUEST</strong> because the customer explicitly asks for the charge to be reversed.</p></div></section>
+
+    <section class="approach-section" id="approach"><div class="shell approach-grid"><div><p class="eyebrow">02 / WORKING METHOD</p><h2>Make the decision traceable.</h2><p>A useful label or preference needs a reason someone else can check. These samples pair judgments with original source IDs, rules, references, and the decisive issue.</p></div><ol><li><span>01</span><div><h3>Identify the source</h3><p>Record question IDs, answer IDs, model identifiers, and task context.</p></div></li><li><span>02</span><div><h3>Apply a consistent rule</h3><p>Score first-turn outputs separately or select one primary intent using precedence rules.</p></div></li><li><span>03</span><div><h3>State the limit</h3><p>Explain errors and why a selected eight-case study cannot establish overall model performance.</p></div></li></ol></div></section>
+
+    <section class="about shell" id="about"><div><p class="eyebrow">03 / ABOUT</p><h2>About me.</h2></div><div><p>I'm Fernando, a native Brazilian Portuguese speaker fluent in English. I've worked with transcription, translation, customer support, and technical support, and I'm studying software development. I want to work in AI evaluation and data annotation because I enjoy careful reading, consistent decisions, and clear feedback.</p><div class="about-links"><a href="https://www.linkedin.com/in/fernando-donato-747980116/" target="_blank" rel="noopener noreferrer">Connect on LinkedIn ↗</a><a href="https://github.com/fernando-donato" target="_blank" rel="noopener noreferrer">View GitHub ↗</a></div></div></section>
+  </main>
+
+  <footer><div class="shell footer-inner"><span>© 2026 Fernando Donato</span><span>Portfolio samples · Brazilian Portuguese / English</span><a href="#top">Back to top ↑</a></div></footer>
+  <script src="script.js" defer></script>
+</body>
+</html>
